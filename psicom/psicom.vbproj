@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D97515FE-54FA-4179-BD09-DA34DC00CD09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>psicom.My.MyApplication</StartupObject>
+    <RootNamespace>psicom</RootNamespace>
+    <AssemblyName>psicom</AssemblyName>
+    <OptionCompare>Binary</OptionCompare>
+    <MyType>WindowsForms</MyType>
+    <ManifestCertificateThumbprint>3DC4C47A12992EC861620E5C73E780A383784FBA</ManifestCertificateThumbprint>
+    <ManifestKeyFile>psicom_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\psicom\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>_MyType="WindowsForms"</DefineConstants>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\release\</OutputPath>
+    <DefineConstants>_MyType="WindowsForms"</DefineConstants>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.BWZipCompress3099e, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\AxInterop.BWZipCompress3099e.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.DCryptn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\AxInterop.DCryptn.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.LEADLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\AxInterop.LEADLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\AxInterop.MSCommLib.dll</HintPath>
+    </Reference>
+    <Reference Include="bjdutils, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bjdutils\bin\Debug\bjdutils.dll</HintPath>
+    </Reference>
+    <Reference Include="gold, Version=2.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\gold\bin\Debug\gold.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.DAO, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Interop.DAO.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSCommLib, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Interop.MSCommLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Interop.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="MIME, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psismtpmime\bin\Debug\MIME.dll</HintPath>
+    </Reference>
+    <Reference Include="psiarchiver, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiarchiver\bin\Debug\psiarchiver.dll</HintPath>
+    </Reference>
+    <Reference Include="psicommslink, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psicommslink\bin\Debug\psicommslink.dll</HintPath>
+    </Reference>
+    <Reference Include="psiftp, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiftp\bin\debug\psiftp.dll</HintPath>
+    </Reference>
+    <Reference Include="psiio, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiio\bin\Debug\psiio.dll</HintPath>
+    </Reference>
+    <Reference Include="psilegacycut, Version=2.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psilegacycut\bin\debug\psilegacycut.dll</HintPath>
+    </Reference>
+    <Reference Include="psilegacylink, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psilegacylink\bin\debug\psilegacylink.dll</HintPath>
+    </Reference>
+    <Reference Include="psilog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psilog\bin\debug\psilog.dll</HintPath>
+    </Reference>
+    <Reference Include="psinetwork, Version=2.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psinetwork\bin\Debug\psinetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="psintp, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psintp\bin\debug\psintp.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparseglobals">
+      <HintPath>..\PsiparseGlobals\bin\Debug\psiparseglobals.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparseinitialise">
+      <HintPath>..\PsiparseInitialise\bin\Debug\psiparseinitialise.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparseinterpretsourcedata">
+      <HintPath>..\PsiparseInterpretSourceData\bin\Debug\psiparseinterpretsourcedata.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsejc1jobs">
+      <HintPath>..\PsiparseJc1Jobs\bin\Debug\psiparsejc1jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsejobcontrol">
+      <HintPath>..\PsiparseJobControl\bin\Debug\psiparsejobcontrol.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsenextjob">
+      <HintPath>..\PsiparseNextJob\bin\Debug\psiparsenextjob.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparseplugin">
+      <HintPath>..\PsiparsePlugin\bin\Debug\psiparseplugin.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsepluginif">
+      <HintPath>..\PsiparsePluginIf\bin\Debug\psiparsepluginif.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsesemanticactions">
+      <HintPath>..\PsiparseSemanticActions\bin\Debug\psiparsesemanticactions.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsesemantics">
+      <HintPath>..\PsiparseSemantics\bin\Debug\psiparsesemantics.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsesemantics1">
+      <HintPath>..\PsiparseSemantics1\bin\Debug\psiparsesemantics1.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsesemantics2">
+      <HintPath>..\PsiparseSemantics2\bin\Debug\psiparsesemantics2.dll</HintPath>
+    </Reference>
+    <Reference Include="psiparsesemantics3, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PsiparseSemantics3\bin\Debug\psiparsesemantics3.dll</HintPath>
+    </Reference>
+    <Reference Include="psismtp, Version=2.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psismtp\bin\debug\psismtp.dll</HintPath>
+    </Reference>
+    <Reference Include="psistore, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psistore\bin\Debug\psistore.dll</HintPath>
+    </Reference>
+    <Reference Include="psithreads, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psithreads\bin\Debug\psithreads.dll</HintPath>
+    </Reference>
+    <Reference Include="psitimenext, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psitimenext\bin\debug\psitimenext.dll</HintPath>
+    </Reference>
+    <Reference Include="psiudp, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiudp\bin\debug\psiudp.dll</HintPath>
+    </Reference>
+    <Reference Include="psiupgrader, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiupgrader\bin\Debug\psiupgrader.dll</HintPath>
+    </Reference>
+    <Reference Include="psiweb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\psiweb\bin\Debug\psiweb.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="psiarchiver" />
+    <Import Include="psilegacylink" />
+    <Import Include="psintp" />
+    <Import Include="psiparse" />
+    <Import Include="psiudp" />
+    <Import Include="psiupgrader" />
+    <Import Include="psiweb" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cmdpreamble.vb" />
+    <Compile Include="cmdinitial.vb" />
+    <Compile Include="initialisers.vb" />
+    <Compile Include="Module1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="schedular.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoot.Designer.vb">
+      <DependentUpon>frmBoot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rxtini.vb">
+    </Compile>
+    <Compile Include="frmSched.Designer.vb">
+      <DependentUpon>frmSched.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSched.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView.Designer.vb">
+      <DependentUpon>frmView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="taskbits.vb" />
+    <Compile Include="taskprocess_background.vb" />
+    <Compile Include="UpgradeSupport.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xmlfile.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mifsend1.ico" />
+    <EmbeddedResource Include="Dalek1.ico" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Tardis1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoot.resX">
+      <DependentUpon>frmBoot.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSched.resx">
+      <DependentUpon>frmSched.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView.resX">
+      <DependentUpon>frmView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
